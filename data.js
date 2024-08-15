@@ -177,6 +177,4 @@ const response={
         "ZWL": 354.367315
     }
 }
-
-//const rate = response.rates["INR"]
-//console.log(rate);
+module.exports = response;

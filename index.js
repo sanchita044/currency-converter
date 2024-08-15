@@ -1,9 +1,9 @@
-import { response } from './data';
-
 const express=require("express");
 const app=express();
 const dotenv=require("dotenv");
 const axios = require('axios');
+const response = require('./data');
+
 dotenv.config({path:'config.env'});
 
 app.use(express.json());
