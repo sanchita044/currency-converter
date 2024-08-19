@@ -3,11 +3,12 @@ const app=express();
 const dotenv=require("dotenv");
 const axios = require('axios');
 const response = require('./data');
+const cors = require('cors');
 
 dotenv.config({path:'config.env'});
 
 app.use(express.json());
-
+app.use(cors());
 app.get("/",(req,res)=>{
     res.status(200).send("welcome to currency convertor");
 });
